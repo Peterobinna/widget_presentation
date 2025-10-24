@@ -1,16 +1,40 @@
-# demo_app
+# Draggable & DragTarget Demo
 
-A new Flutter project.
+A simple Flutter widget demonstration showing **drag-and-drop interaction** using the `Draggable` and `DragTarget` widgets.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Description
+This app lets you drag a blue box and drop it onto a target area.  
+When the drag is successful, the target changes colour and displays the text **“Accepted!”** — visually showing how Flutter handles drag and drop state.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## How to Run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/Peterobinna/widget_presentation.git
+   cd widget_presentation
+
+2. **Get dependencies**
+   ```bash
+   flutter pub get
+
+3. **Run the app**
+   ```bash
+   flutter run
+
+Ensure you have Flutter installed and connected to a simulator or device.
+
+## Key Attributes Explained
+
+| Attribute           | Description                                                                                        |
+| ------------------- | -------------------------------------------------------------------------------------------------- |
+| `data`              | The object or value carried by the draggable widget (in this demo, a colour value).                |
+| `feedback`          | The widget shown while the user is dragging — usually a translucent version of the draggable item. |
+| `childWhenDragging` | The widget displayed in the draggable’s original position while it’s being dragged.                |
+
+## Screenshot
+
+Below is a sample screenshot of the final UI:
